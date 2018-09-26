@@ -15,6 +15,6 @@
     9 - The Win counter will increment every time the user wins and a sound or song will play
         to celebrate the win
     10- If the guess times is 0 and the word has not been guessed, the user will lose and I need to 
-        show the losses on the display and a sound will play
+        show the losses on the display
     11- After the user wins/loses the game should automatically choose another word and make the user 
         play it.
