@@ -1,0 +1,104 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman by Sandy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" /> 
+
+    
+</head>
+<body>
+
+    <!--Jumbotron with the logo and new game button-->
+
+    <div class="jumbotron dk-gray">
+        <div class="container">
+            <div class="row aling-items-center">
+                <div class="col-12 my-3 aling-items-center">
+                    <h1 class="display-6" >MOVIES FROM THE 90's -- GUESS GAME</h1>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="row aling-items-center">
+                <div class="col-12 col-md-8 py-1">
+                    <img src="assets/images/logo.jpg" class="img-fluid" alt="Responsive image">       
+                </div>
+                <div class="col-12 col-md-4 py-5">
+                    <button type="button" class="btn btn-primary" id="new-button">
+                        <i class="fas fa-gamepad"></i>
+                        Start New Game   
+                    </button>     
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Row to keep the correct and incorrect guessed letters-->
+    <div class="container-fluid" id="guessletters">
+        <div class="row">
+            <div class="col-12 text-center py-5" id="placeholder-forletters">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-8 my-2">
+                            <h2>
+                                Guess Movie!!
+                                <br>
+                                <span id="correctletters">___ ______!</span>
+                            </h2>
+                        </div>
+                        <div class="col-12 col-md-4 my-2">
+                            <h2>
+                                Letters Guessed!
+                                <span id="lettersguessed"> </span>
+                            </h2>
+                        </div>
+                    </div>
+                    <div Class="row">
+                        <div Class="clo-12 col-md-8 my-2" class="winnerpic">
+                            
+                            <img src="assets/images/meninblack.png" id="meninblack" class="hidden" class="img-fluid" alt="Responsive image">
+                            <img src="assets/images/casino.png" id="casino" class="hidden" class="img-fluid" alt="Responsive image">
+                            <img src="assets/images/neverbeenkissed.png" id="neverbeenkissed" class="hidden" class="img-fluid" alt="Responsive image">
+                            <img src="assets/images/goodfellas.png" id="goodfellas" class="hidden" class="img-fluid" alt="Responsive image">
+                            <img src="assets/images/rumbleinthebronx.png" id="rumbleinthebronx" class="hidden" class="img-fluid" alt="Responsive image">
+                            <img src="assets/images/thematrix.png" id="thematrix" class="hidden" class="img-fluid" alt="Responsive image">
+                            <img src="assets/images/thefifthelement.png" id="thefifthelement" class="hidden" class="img-fluid" alt="Responsive image">
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+            <!--Row to keep the wins, losses and number of guessed letters remaining-->
+
+        <div class="row" id="row2">
+            <div class="col-12 col-md-4 text-center py-1">
+                <h2>
+                    Guess Left: <span id="lettersremaining">0</span>
+                </h2>
+            </div>
+            <div class="col-12 col-md-4 text-center py-1">
+                <h2>
+                    Wins: <span id="wins">0</span>
+                </h2>
+            </div>
+            <div class="col-12 col-md-4 text-center py-1">
+                <h2>
+                    Losses: <span id="losses">0</span>
+                </h2>
+            </div>
+        </div>
+    </div>
+
+<script src="assets/javascript/gamev2.js"></script>
+
+    
+</body>
+</html>

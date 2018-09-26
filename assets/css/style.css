@@ -1,0 +1,33 @@
+
+body {
+    background-color: #5ed3f0de;
+}
+
+.jumbotron {
+    background-color: #bbb8b8;
+    margin-bottom:0;
+}
+
+#new-button {
+    margin-top:10%;
+}
+
+.container-fluid {
+    border-top: blue;
+    border-top-style: solid;
+}
+
+#row2 {
+    border-top: blue;
+    border-top-style: dotted;
+}
+
+#correctletters {
+    letter-spacing: 5px;
+    font-size:30px;
+}
+
+.hidden {
+    display: none;
+   
+}
